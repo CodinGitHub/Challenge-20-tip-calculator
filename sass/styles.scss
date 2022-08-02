@@ -1,0 +1,44 @@
+@use 'initial';
+@use 'variables';
+@use 'mixins';
+
+.tip-container{
+    width: 375px;
+    background-color: variables.$White;
+    margin: auto;
+    border-radius: 16px;
+    padding: 32px;
+}
+.first-section{
+    border: 1px solid red;
+}
+button{
+    @include mixins.button
+}
+.btn-container{
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+}
+.second-section{
+    background-color: variables.$Very-dark-cyan;
+    border-radius: 12px;
+    height: 260px;
+    padding: 42px 24px 24px;
+}
+.first-section__label{
+    display: block;
+}
+.first-section__bill{
+    background-color: variables.$Very-light-grayish-cyan;
+    border: none;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    &::-webkit-inner-spin-button{
+        -webkit-appearance: none; 
+    }
+    
+}

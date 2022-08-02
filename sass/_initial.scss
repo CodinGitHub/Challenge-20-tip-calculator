@@ -1,0 +1,13 @@
+@use 'variables';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: variables.$Mono-space-font;
+    background-color: variables.$Light-grayish-cyan;
+}

@@ -1,0 +1,20 @@
+@use 'variables';
+
+@mixin button {
+    width: 147px;
+    height: 50px;
+    background-color: variables.$Very-dark-cyan;
+    color: variables.$Very-light-grayish-cyan;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 4px;
+    font-family: variables.$Mono-space-font;
+    &:hover{
+        cursor: pointer;
+    }
+    &:focus{
+        background-color: variables.$Strong-cyan;
+        color: variables.$Dark-grayish-cyan;
+
+    }
+}
