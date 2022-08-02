@@ -11,59 +11,59 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>SPLI <br> TTER</h1>
+  <header class="header">
+    <h1 class="header-title">SPLI <br> TTER</h1>
   </header>
   
+  <section class="calculator-container">
 
-  <section class="tip-container">
-    <div class="first-section">
-      <label class="first-section__label" for="bill">Bill</label>
-      <input class="first-section__bill" id="bill" type="number">
+    <div class="inputs-section">
+      <label class="inputs-section__bill-label" for="bill">Bill</label>
+      <input class="inputs-section__bill-input" id="bill" type="number" value="100">
 
-      <fieldset class="btn-container">
-        <legend>Select Tip %</legend>
-        <button class="button">5%</button>
-        <button class="button">10%</button>
-        <button class="button">15%</button>
-        <button class="button">25%</button>
-        <button class="button">50%</button>
-        <button class="button">Custom</button>
+      <fieldset class="btns">
+        <legend class="btns__legend">Select Tip %</legend>
+        <button class="btns__button btns__button--selected">5%</button>
+        <button class="btns__button">10%</button>
+        <button class="btns__button">15%</button>
+        <button class="btns__button">25%</button>
+        <button class="btns__button">50%</button>
+        <button class="btns__button--custom">Custom</button>
       </fieldset>
-      
 
-      <label for="people">Number of People</label>
-      <input id="people" type="number">
+      <label class="inputs-section__people-label" for="people">Number of People</label>
+      <input class="inputs-section__people-input" id="people" type="number" value="5">
     </div>
 
-    <div class="second-section">
+    <div class="result-section">
       <div class="result">
-        <p class="amount">Tip Amount <span>/ person</span></p>
-        <p class="tip-result">$4.27</p>
-        <p class="total">Total <span>/ person</span></p>
-        <p class="total-result">$4.27</p>
+        <div>
+          <p class="result-amount">Tip Amount</p>
+          <p class="result-amount__person">/ person</p>
+        </div>
+        
+        <p class="result-amount__value">$0</p>
+
+        <div>
+          <p class="result-total">Total</p>
+          <p class="result-total__person">/ person</p>
+        </div>
+        
+        <p class="result-total__value">$0</p>
       </div>
-      <button>Reset</button>
+      <button class="result-reset">Reset</button>
     </div>
-    
-
-    
-
-    
-
   </section>
 
-
-  
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://www.youtube.com/CodingTube" target="_blank">David Ruiz</a>.
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
