@@ -24,7 +24,7 @@
 
     <div class="inputs-section">
       <label class="inputs-section__bill-label" for="bill">Bill</label>
-      <input class="inputs-section__bill-input" id="bill" type="number" value="100">
+      <input class="inputs-section__bill-input" id="bill" type="number" value="0">
 
       <fieldset class="btns">
         <legend class="btns__legend">Select Tip %</legend>
@@ -33,11 +33,11 @@
         <button class="btns__button">15%</button>
         <button class="btns__button">25%</button>
         <button class="btns__button">50%</button>
-        <button class="btns__button--custom">Custom</button>
+        <input class="btns__custom" type="number" placeholder="Custom">
       </fieldset>
 
-      <label class="inputs-section__people-label" for="people">Number of People</label>
-      <input class="inputs-section__people-input" id="people" type="number" value="5">
+      <label class="inputs-section__people-label" for="people" >Number of People <span class="alert"></span></label>
+      <input class="inputs-section__people-input" id="people" type="number" min="0" value="5">
     </div>
 
     <div class="result-section">

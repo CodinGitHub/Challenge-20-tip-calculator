@@ -37,9 +37,7 @@
     caret-color: variables.$Strong-cyan;
     border-radius: 4px;
     border: 2px solid variables.$Very-light-grayish-cyan;
-    &::-webkit-inner-spin-button{
-        -webkit-appearance: none; 
-    }
+    
     &:focus{
         outline: none;
         border: 2px solid variables.$Strong-cyan;

@@ -17,9 +17,6 @@
     border-radius: 16px;
     padding: 32px;
 }
-.inputs-section{
-    width: 100%;
-}
 
 .inputs-section__bill-label {
     @include mixins.label;
@@ -45,18 +42,32 @@
     @include mixins.button
 }
 
-.btns__button--custom {
-    @include mixins.button;
-    background-color: variables.$Very-light-grayish-cyan;
+.btns__custom {
+    @include mixins.input(unset);
+    text-align: center;
     color: variables.$Dark-grayish-cyan;
 }
 
 .inputs-section__people-label {
     @include mixins.label;
+    position: relative;
 }
 
 .inputs-section__people-input {
     @include mixins.input('../images/icon-person.svg');
+    
+}
+
+.error{
+    border-color: rgb(164, 68, 68);
+    &::after{
+        content: "Can't be Zero";
+        color: rgb(164, 68, 68);
+        font-size: 0.7em;
+        position: absolute;
+        right: 0;
+        top: 5px;
+    }
 }
 
 .result-section {
@@ -86,11 +97,12 @@
 }
 
 .result-reset {
+    width: 100%;
+    height: 50px;
     background-color: variables.$Strong-cyan;
     color: variables.$Very-dark-cyan;
     text-transform: uppercase;
-    width: 100%;
-    height: 50px;
+    
     font-size: 1em;
     border: none;
     border-radius: 4px;
@@ -137,3 +149,4 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
