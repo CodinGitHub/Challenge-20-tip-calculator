@@ -8,23 +8,17 @@
   
   <title>Frontend Mentor | Tip calculator app</title>
   <link rel="stylesheet" href="./styles.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    
-  </style>
 </head>
 <body>
 
   <header class="header">
-    <h1 class="header-title">SPLI <br> TTER</h1>
+    <h1 class="header__title">SPLI <br> TTER</h1>
   </header>
-  
-  <section class="calculator-container">
 
+  <section class="calculator-container">
     <div class="inputs-section">
-      <label class="inputs-section__bill-label" for="bill">Bill</label>
-      <input class="inputs-section__bill-input" id="bill" type="number" value="0">
+      <label for="bill" class="inputs-section__bill-label" >Bill</label>
+      <input id="bill" class="inputs-section__bill-input" type="number" value="100">
 
       <fieldset class="btns">
         <legend class="btns__legend">Select Tip %</legend>
@@ -36,34 +30,38 @@
         <input class="btns__custom" type="number" placeholder="Custom">
       </fieldset>
 
-      <label class="inputs-section__people-label" for="people" >Number of People <span class="alert"></span></label>
-      <input class="inputs-section__people-input" id="people" type="number" min="0" value="5">
+      <label for="people" class="inputs-section__people-label" >Number of People <span id="alert"></span> </label>
+      <input id="people" class="inputs-section__people-input" min="1" type="number" value="5">
     </div>
 
     <div class="result-section">
-      <div class="result">
-        <div>
-          <p class="result-amount">Tip Amount</p>
-          <p class="result-amount__person">/ person</p>
-        </div>
-        
-        <p class="result-amount__value">$0</p>
+      <div class="results">
 
         <div>
-          <p class="result-total">Total</p>
-          <p class="result-total__person">/ person</p>
+          <p class="results__tip-amount">Tip Amount</p>
+          <p class="results__tip-person">/ person</p>
         </div>
-        
-        <p class="result-total__value">$0</p>
+
+        <p class="results__tip-value">0</p>
+
+        <div>
+          <p class="results__total-amount">Total</p>
+          <p class="results__total-person">/ person</p>
+        </div>
+
+        <p class="results__total-value">0</p>
+
       </div>
-      <button class="result-reset">Reset</button>
+      
+      <button class="result-section__reset">Reset</button>
+
     </div>
   </section>
-
-  <footer class="attribution">
+  
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.youtube.com/CodingTube" target="_blank">David Ruiz</a>.
-  </footer>
-  <script src="main.js"></script>
+  </div>
+  <script src="./main.js"></script>
 </body>
 </html>
